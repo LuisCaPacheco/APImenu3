@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Actualizar Producto</title>
+</head>
+<body>
+    <h1>Actualizar Producto</h1>
+    <form method="post" action="/actualizar_producto/{{ producto.id }}">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" value="{{ producto.nombre }}" required><br>
+        <label for="descripcion">Descripción:</label>
+        <textarea id="descripcion" name="descripcion" required>{{ producto.descripcion }}</textarea><br>
+        <input type="submit" value="Actualizar">
+    </form>
+    <a href="/ver_producto/{{ producto.id }}">Cancelar</a>
+</body>
+</html>

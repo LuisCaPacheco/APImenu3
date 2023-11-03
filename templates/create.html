@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crear Producto</title>
+</head>
+<body>
+    <h1>Crear Producto</h1>
+    <form method="post" enctype="multipart/form-data" action="/crear_producto">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br>
+        <label for="descripcion">Descripción:</label>
+        <textarea id="descripcion" name="descripcion" required></textarea><br>
+        <label for="imagen">Imagen:</label>
+        <input type="file" id="imagen" name="imagen" accept="image/*" required><br>
+        <input type="submit" value="Guardar">
+    </form>
+</body>
+</html>
